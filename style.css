@@ -126,3 +126,11 @@
  .footer ul li a:hover{
      opacity: 1;
  }
+
+ .name {
+     opacity: 0;
+ }
+
+ .intro {
+     opacity: 0;
+ }
