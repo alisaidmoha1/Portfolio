@@ -1,3 +1,7 @@
+body {
+    transition: 0.3s;
+}
+
 .header {
     position: absolute;
     z-index: 10;
@@ -62,6 +66,11 @@
      border: 2px solid #7f7f7f;
      border-radius: 0;
      outline: none;
+ }
+
+ .dark .navbar-light .navbar-toggler{
+
+    color:white;
  }
 
  .navbar-collapse {
@@ -133,4 +142,74 @@
 
  .intro {
      opacity: 0;
+ }
+
+ .switch {
+     width: 80px;
+     height: 40px;
+     border-radius: 20px;
+     background-color: rgb(39, 38, 38);
+     position: relative;
+
+ }
+
+ .flicker {
+     width: 30px;
+     height: 30px;
+     border-radius: 15px;
+     background-color: rgb(255, 255, 255);
+     position:absolute;
+     top: 5px;
+     left: 5px;
+     transition: 0.3s;
+     box-shadow: 
+     inset 4px 4px 4px rgb(255, 255, 255),
+     inset -4px -4px 4px rgb(195 193 198/ 98%);
+ }
+
+ .dark {
+     background-color: rgb(57, 57, 57);
+ }
+
+ .moon {
+     width: 20px;
+     height: 20px;
+     border-radius: 10px;
+     box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+     position: absolute;
+     top: 5px;
+     left: 45px;
+ }
+
+ .bg-secondry {
+     background:rgb(57,57,57);
+     color:white;
+ }
+
+ .dark .flicker {
+     transform: translateX(40px);
+     transition: 0.3s;
+ }
+
+ header{
+     display: flex;
+     justify-content: flex-end;
+     padding: 30px;
+
+ }
+
+ .dark >* {
+    color:rgb(255, 255, 255)
+ }
+
+ .dark .navbar-brand  {
+     color: white;
+ }
+
+ .dark #navbarSupportedContent {
+     background-color:rgb(57, 57, 57);
+ }
+
+ .dark #navbarSupportedContent ul li a {
+     color:white;
  }
